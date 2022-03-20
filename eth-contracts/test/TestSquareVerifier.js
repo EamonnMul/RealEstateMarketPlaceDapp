@@ -5,3 +5,31 @@
 
     
 // Test verification with incorrect proof
+
+const SquareVerifier = artifacts.require('SolnSquareVerifier');
+const genuineProofJson = require('../../zokrates/code/square/proof2.json');
+const falseProofJson = require('../../zokrates/code/square/proofFalse.json');
+
+contract('SquareVerifier Test', async (accounts) => {
+
+    let contract;
+
+    before('setup contract', async () => {
+        contract = await SquareVerifier.new("TT_ERC721MintableToken", "TT_721M");
+    });
+
+    describe('can verify proof', function () {
+
+        it('should verify genuine proof', async () => {
+            const {proof, inputs} = genuineProofJson;
+            const verified = await contract.verifyTx(proof.a, proof.b, proof.c, inputs);
+            assert.equal(verified, true, "Not verified correctly");
+          
+        });
+
+
+
+
+    });
+
+})
