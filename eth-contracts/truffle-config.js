@@ -48,7 +48,7 @@ module.exports = {
       network_id: "*",       // Any network (default: none)
     },
     rinkeby: {
-      provider: () => new HDWallet(mnemonic, `https://rinkeby.infura.io/v3/${infuraKey}`),
+      provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/${infuraKey}`),
         network_id: 4,       
         gas: 4500000,        
         confirmations: 2,

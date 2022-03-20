@@ -38,7 +38,7 @@ contract('TestSolnSquareVerifier', accounts => {
 
         it('should mint token for it', async () => {
             const {proof, inputs} = Proof1Json;
-            const verified = await contract.mintVerified(account_two, 1, proof.a, proof.b, proof.c, inputs, {from: account_one});
+            const verified = await contract.mintVerified(account_two, 11, proof.a, proof.b, proof.c, inputs, {from: account_one});
             truffleAssertions.eventEmitted(verified,'minted'); 
             
         });
@@ -46,7 +46,7 @@ contract('TestSolnSquareVerifier', accounts => {
             const {proof, inputs} = ProofFalseJson;
             let proofFalse = false;
             try {
-                proofFalse  = await contract.mintVerified(account_two, 2, proof.a, proof.b, proof.c, inputs, {from: account_one});
+                proofFalse  = await contract.mintVerified(account_two, 12, proof.a, proof.b, proof.c, inputs, {from: account_one});
                 
             } catch (error) {
                
