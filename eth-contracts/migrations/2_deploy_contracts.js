@@ -5,6 +5,7 @@ artifacts.require("./CustomERC721Token.sol");
 var SolnSquareVerifier = artifacts.require("./SolnSquareVerifier.sol");
 const SquareVerifier = require('../build/contracts/SolnSquareVerifier.json');
 
+//below used for rinkeby deployment 
 var account_one = '0x8402f907ca2b0828034493dfd0C4ee2a11Ab7590'; 
 //var account_one = '0xcf98b2DC3a7F54832Ce020C073201F7533E9347E';
 
