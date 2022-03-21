@@ -1,16 +1,10 @@
 # Udacity Blockchain Capstone
 
-The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
+This project represents ownership of the properties through the use of NFTs. These NFTs are made available for sale on blockchain marketplace.
 
-# Open Sea Lisitngs
+# Open Sea Collection Lisitng
 
-https://testnets.opensea.io/assets/0x752d7da3eea847cae45be7a380e879bab3351aef/0
-
-https://testnets.opensea.io/assets/0x752d7da3eea847cae45be7a380e879bab3351aef/1
-
-https://testnets.opensea.io/assets/0x752d7da3eea847cae45be7a380e879bab3351aef/2
-
-https://testnets.opensea.io/assets/0x752d7da3eea847cae45be7a380e879bab3351aef/3
+https://testnets.opensea.io/collection/unidentified-contract-n99ewmx2yn
 
 # Rinkeby TestNet Deployment 
    ------------------------------
@@ -23,6 +17,12 @@ https://testnets.opensea.io/assets/0x752d7da3eea847cae45be7a380e879bab3351aef/3
 ## Etherscan Address 
 
 https://rinkeby.etherscan.io/address/0x752d7DA3eeA847cAE45BE7a380e879bab3351AEf
+
+## How to run tests
+
+In the eth-contracts directory run the following command in the  terminal: 
+
+truffle test
 
 # Versions 
 
